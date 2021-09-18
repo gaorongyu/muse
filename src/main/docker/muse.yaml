@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: springboot-service-muse
-          image: localhost:5000/muse:latest
+          image: localhost:30001/muse:latest
           imagePullPolicy: Always
           volumeMounts:
             - mountPath: /data/logs
