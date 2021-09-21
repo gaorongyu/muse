@@ -47,5 +47,5 @@ public class VersionEntity extends Model<VersionEntity> {
                 ", remark='" + remark + '\'' +
                 '}';
     }
-    
+
 }
