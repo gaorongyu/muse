@@ -25,6 +25,11 @@ spec:
           env:
             - name: JAVA_OPTS
               value: "-Xms256m -Xmx256m -Dserver.port=8080 -Dspring.profiles.active=prod"
+            - name: SPRING_APPLICATION_JSON
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: spring-config.json
           resources:
             requests:
               memory: "256Mi"
@@ -65,3 +70,4 @@ spec:
       protocol: TCP
       targetPort: 8080
   type: ClusterIP
+---

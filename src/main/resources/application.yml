@@ -1,3 +1,15 @@
 server.port: 8080
 spring.profiles.active: local
 server.servlet.context-path: /muse
+
+spring.datasource.type: com.zaxxer.hikari.HikariDataSource
+spring.datasource.driver-class-name: com.mysql.jdbc.Driver
+spring.datasource.initialize: false
+
+mybatis-plus.mapper.location: classpath:/mapper/*Mapper.xml
+mybatis-plus.typeAliasesPackage: com.fngry.muse.dao.entity
+mybatis-plus.global-config.db-config.id-type: auto
+mybatis-plus.global-config.db-config.field-strategy: default
+mybatis-plus.configuration.map-underscore-to-camel-case: true
+mybatis-plus.configuration.cache-enabled: false
+

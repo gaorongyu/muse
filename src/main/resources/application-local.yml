@@ -1,1 +1,5 @@
 server.port: 8080
+
+spring.datasource.url: jdbc:mysql://localhost:3306/muse?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useAffectedRows=true
+spring.datasource.username: root
+spring.datasource.password: 123456
