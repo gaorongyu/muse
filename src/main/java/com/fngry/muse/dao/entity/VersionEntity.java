@@ -39,4 +39,13 @@ public class VersionEntity extends Model<VersionEntity> {
         this.remark = remark;
     }
 
+    @Override
+    public String toString() {
+        return "VersionEntity{" +
+                "id=" + id +
+                ", tag='" + tag + '\'' +
+                ", remark='" + remark + '\'' +
+                '}';
+    }
+    
 }
