@@ -35,13 +35,13 @@ spec:
               memory: "256Mi"
           readinessProbe:
             httpGet:
-              path: /muse/demo/hello?greeting=abc
+              path: /muse/demo/hello?greeting=readinessProbe
               port: 8080
             initialDelaySeconds: 15
             periodSeconds: 5
           livenessProbe:
             httpGet:
-              path: /muse/demo/hello?greeting=abc
+              path: /muse/demo/hello?greeting=livenessProbe
               port: 8080
             initialDelaySeconds: 15
             periodSeconds: 5
@@ -51,7 +51,7 @@ spec:
                 command:
                   - bash
                   - -c
-                  - "curl http://localhost:8080/muse/demo/hello?greeting=bye"
+                  - "curl http://localhost:8080/muse/demo/hello?greeting=preStop"
       volumes:
         - name: log-storage
           hostPath:
@@ -70,4 +70,3 @@ spec:
       protocol: TCP
       targetPort: 8080
   type: ClusterIP
----
