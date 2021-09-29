@@ -22,6 +22,8 @@ spec:
           volumeMounts:
             - mountPath: /data/logs
               name: log-storage
+            - mountPath: /data/ext
+              name: data-ext-storage
           ports:
             - containerPort: 8080
           env:
@@ -58,6 +60,9 @@ spec:
         - name: log-storage
           hostPath:
             path: /data/logs
+        - name: data-ext-storage
+          persistentVolumeClaim:
+            claimName: data-ext-pvc
 
 ---
 kind: Service
