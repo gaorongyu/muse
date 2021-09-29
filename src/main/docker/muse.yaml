@@ -13,6 +13,8 @@ spec:
       labels:
         app: springboot-service-muse
     spec:
+      imagePullSecrets:
+        - name: aliyun-docker-registry-fngry-secret
       containers:
         - name: springboot-service-muse
           image: localhost:30001/muse:latest
