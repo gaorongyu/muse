@@ -2,7 +2,6 @@ package com.fngry.muse.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.fngry.muse.dao.dal.WechatHotelStoreDao;
 import com.fngry.muse.dao.dal.query.HotelStoreQuery;
