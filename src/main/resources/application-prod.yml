@@ -1,4 +1,4 @@
 
-spring.datasource.url: jdbc:mysql://${db.host}/bjminsu?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useAffectedRows=true
-spring.datasource.username: ${db.username}
-spring.datasource.password: ${db.password}
+spring.datasource.url: jdbc:mysql://localhost:3306/bjminsu?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useAffectedRows=true
+spring.datasource.username: root
+spring.datasource.password: Gry@00168
