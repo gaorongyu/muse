@@ -17,4 +17,6 @@ mybatis-plus.typeAliasesPackage: com.fngry.muse.dao.entity
 mybatis-plus.global-config.db-config.id-type: auto
 mybatis-plus.configuration.map-underscore-to-camel-case: true
 mybatis-plus.configuration.cache-enabled: false
+# log
+logging.config: classpath:log4j2_${env.name}.xml
 

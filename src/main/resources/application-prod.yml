@@ -1,3 +1,4 @@
+env.name: prod
 
 spring.datasource.url: jdbc:mysql://localhost:3306/bjminsu?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useAffectedRows=true
 spring.datasource.username: root
