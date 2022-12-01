@@ -17,7 +17,7 @@ spec:
         - name: aliyun-docker-registry-fngry-secret
       containers:
         - name: springboot-service-muse
-          image: localhost:30001/muse:latest
+          image: registry-vpc.cn-hangzhou.aliyuncs.com/fngry/muse:latest
           imagePullPolicy: Always
           volumeMounts:
             - mountPath: /data/logs
